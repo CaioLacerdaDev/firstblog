@@ -17,7 +17,7 @@ body {
     padding: 10px;  
 }
 header{
-    background-color: #5f5fe2;
+    background-color: #a9a9b6;
     border-radius: 6px;
     height: 150px;
     display: flex;
@@ -25,7 +25,7 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-#image-profile {
+#image-logo {
     height: 120px;
     width: 120px;
     border-radius: 50%;
@@ -40,19 +40,19 @@ header{
     justify-content: space-between;
 }
 main {
-    background-color: #3235e4;
+    background-color: #a9a9b6;
     border-radius: 6px;
     height: 100%;
     width: 73%;
 }
 aside {
-    background-color: #0004ff;
+    background-color: #a9a9b6;
     border-radius: 6px;
     height: 100%;
     width: 25%;
 }
 footer {
-    background-color: #5f5fe2;
+    background-color: #a9a9b6;
     border-radius: 6px;
     height: 100px;
     display: flex;
@@ -64,9 +64,25 @@ footer p {
     color: #f1f1f1;
     font-size: 1.2rem;
 }
-footer a {
+footer a {                                                                                  
     color: #f1f1f1;
     text-decoration: none;
+    font-weight: 500    ;
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 4rem;
     font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    border-radius: 3px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
 }
 
